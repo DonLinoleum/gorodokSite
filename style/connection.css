@@ -1,0 +1,55 @@
+#connection_wrapper
+{
+	overflow:hidden;
+}
+
+#connection_img
+{
+	background-image: url("images/connection.jpg");
+	background-position: center;
+	height: 50vh;
+	transition: all 1s;
+	
+}
+#connection_img:hover
+{
+	transform: scale(1.1);
+}
+
+#connection
+{
+	display: flex;
+	flex-direction: row;
+}
+
+#connection_left
+{
+	order:-1;
+	flex: 1 1 auto;
+	width: 50%;
+	margin: 1em;
+	margin-left: 3em;
+	font-family: font3;
+	font-size: 1.1em;
+	
+}
+.router
+{
+	width:90%;
+	
+	margin-top: 1em;
+}
+
+#connection_right
+{
+	order: 1;
+	flex: 1 1 auto;
+	width: 50%;
+	margin: 1em;
+}
+
+.connection_tr tr td
+{
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}

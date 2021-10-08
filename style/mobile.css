@@ -1,0 +1,445 @@
+/* Стили для телефонов */
+@media (min-width:280px) and (max-width:768px)
+{
+/* Стили баланса, тарифа, счета */	
+#Ballance
+{
+	display: flex;
+	flex: 1 1 auto;
+	justify-content: center;
+	align-items: center;
+	background-color: #f5f7fc;
+	box-shadow: 5px 5px 11px black;
+	margin-bottom: 10px;
+	margin-top:-2em;
+}
+.nav_ballance
+{
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+}
+
+.nav_ballance li
+{
+	position: relative;
+	font-family: font3;
+	font-size: 0.75em;
+	width: 8em;
+	text-align: center;
+	color: black;
+	
+}
+/* Стили полосы остатка дней */
+.ostatok
+	{
+	position:relative;
+	margin-left:1.5em;
+	margin-top:1em;
+	margin-bottom:-1em;
+	height: 15px;
+	overflow: hidden;	
+	background: linear-gradient(to right, #ff0000 0%,#ebe852 50%,#6cfa00 100%);
+	transform: scale(0.35);
+	}	
+#ostatok_dney
+{
+	margin-top:1.5em;
+	margin-bottom:-1em;
+	margin-left:1.5em;
+	margin-right:-1em;
+	font-size:0.7em;	
+}
+	
+	#logo
+{
+	width: 5em;
+	height: 3em;
+	margin:0.5em;
+}
+/* Стиль красной буквы остатка дней  */
+	#kr
+	{
+	color : #b31717;
+	font-size: 1.2em;;
+	font-family: helvetica;
+	}
+
+/*Стиль главного меню */
+#HeaderMenu
+{
+	display: flex;
+	flex-direction: row;
+	font-size: 1.1em;
+	background-color: #f5f7fc;
+	justify-content: space-between;
+	box-shadow: 5px 5px 11px black;
+	margin-bottom: 12px;
+	
+}
+
+#kino_link
+{
+	display: flex;
+	width: 1.8em;
+	height: 1.8em;
+	margin-bottom:0.5em;
+	margin-left:0em;
+}
+#cam_link
+{
+	display: flex;
+	width: 2.2em;
+	height: 2.2em;
+	margin-left:0em;
+	
+}
+#kabinet_link
+{
+	display: flex;
+	width: 2em;
+	height: 2em;
+	margin-left:-0.5em;
+}
+
+#MenuMobileButton
+{
+	display: flex;
+	width: 2em;
+	height: 2em;
+	transition: all 0.6s;
+	align-self: center;
+	margin-right: 1em;
+}
+
+
+#MobileNav
+{
+	display: block;
+	padding-left: 2em;
+	max-height: 0px;
+	background-color:white;
+	background-image: url('images/fon.png');
+	height:265px;
+	transition: all 0.8s ease-out;
+    	
+}
+
+
+#MobileNav ul
+{
+	list-style: none;
+	padding-left: 1em;
+	margin-top:-0.2em;
+
+	
+}
+#MobileNav a
+{
+	text-decoration: none;
+	font-family: font4;
+	font-size: 1.3em;
+	color: black;
+	display:flex;
+	margin-bottom:0.5em;
+	
+}
+
+
+.nav
+{
+	display: none;
+	flex-direction: column;	
+	list-style: none;
+
+}
+
+.nav a
+{
+	flex:none;
+	text-align: center;
+	color: black;
+	text-decoration: none;
+}
+
+
+.Main
+{
+	display: flex;
+	flex-direction: column;
+	background-color: #fcfcfc;
+	box-shadow: 1px 1px 3px black;
+	margin: 0 auto;
+	width: 100%;
+	
+}
+
+hr
+{
+	height: 2.5px;
+	background-color: #e3ffe3;
+
+}
+
+h1
+{
+	font-size:1.1em;
+}
+
+#ActionsMain
+{
+	overflow: hidden;
+}
+
+#ActionsContainer
+{
+	display: flex;
+	transition: all 2s;
+}
+
+
+#ActionItem
+{
+	position: relative;
+	display: flex;
+	flex: none;
+	flex-direction: column;
+	color: black;
+	width: 100%;
+	font-size: 1.2em;
+	text-align: center;
+	height: 18em;
+	background-image: url('images/fon.jpg');
+	background-size: 1200px 100%;
+}
+
+#ActionItem2
+{
+	position: relative;
+	display: flex;
+	flex: none;
+	flex-direction: column;
+	color: white;
+	width: 100%;
+	font-size: 1.2em;
+	text-align: center;
+	height: 18em;
+	background-image: url('images/fon2.jpg');
+	background-size: 600px 100%;
+}
+
+#ActionButtonContainer
+{
+	
+	position: absolute;
+	margin: 0 auto;
+	left: 30%;
+	right: 30%;
+	bottom:5%;
+	font-size: 1.2em;
+}
+
+.but1
+{
+	width:120px;
+	height: 40px;
+	border-radius: 15px;
+	background-color: #1d542e;
+	border: none;
+	color: white;
+	font-size: 16px;
+	transition: all 0.4s;
+}
+
+#Tarif
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1em;
+}
+
+.TarifItem
+{
+	display: block;
+	font-family: font1;
+	font-size: 1.4em;
+	border: solid 2px #b8b8b8;
+	padding:0.5em;
+	margin: 1em;
+	transition: all 0.2s;
+	
+}
+.TarifItem:hover
+{
+border: solid 3px #656ba8;	
+font-size: 1.41em;
+color:#694209;
+}
+
+#TarifItemText
+{
+	font-size: .6em;
+	margin-top: -1.5em;
+}
+
+#TarifItemimg
+{
+	width:40px;
+	height: 40px;
+	margin:-0.5em;
+}
+
+.TarifTVButton
+{
+	display: block;
+	margin: 0 auto;
+	border-radius: 5px;
+	color: white;
+	background-color: #433e8c;
+	width: 200px;
+	height: 30px;
+}
+.TarifNotTVButton
+{
+	display: block;
+	margin: 0 auto;
+	border-radius: 5px;
+	color: white;
+	background-color: #6eb887;
+	width: 200px;
+	height: 30px;
+}
+
+#podrobnosti
+{
+	display:flex;
+	flex-direction:column;
+	margin: 40px auto;
+	font-family: font3;
+	font-size: 1em;
+	width: 80%;
+	transition: all 1s ease-out;
+	max-height: 1px;
+}
+#podrobnosti_list
+{
+	display: none;
+	flex-direction: column;
+	font-family: font3;
+	
+}
+
+#kinozal
+{
+	display:block;
+	margin: 0 auto;
+	background-image:url(images/kino.jpg);
+	height:20em;
+	background-position: top center;
+	background-size: 350% auto;
+	transition:all 1s ease-out;
+	
+}
+
+#kinozal:hover
+{
+	transform: scale(1.2);
+}
+#KinoParent
+{
+	overflow:hidden;
+	width:90%;
+	display:block;
+	margin: 0 auto;
+	margin-top:1em;
+}
+
+#kinoWrapper
+{
+	
+	transition:all 1s ease-out;
+	border-bottom: 2px solid;
+	font-size:1.2em;
+	background-color: #f0f0f0;
+	cursor: pointer;
+}
+#kinoWrapper:hover
+{
+	color:#8a440b;
+}
+
+/* Стили connection.jsp  */
+#connection
+{
+	display: flex;
+	flex-direction: column;
+}
+
+#connection_left
+{
+	order:-1;
+	flex: 1 1 auto;
+	width: 100%;
+	margin: 0em;
+	margin-left: 0em;
+	font-family: font3;
+	font-size: 1.1em;
+	
+}
+.router
+{
+	width:100%;
+	
+	margin-top: 1em;
+}
+
+#connection_right
+{
+	order: 1;
+	font-size: 1em;
+	flex: 1 1 auto;
+	width: 100%;
+	margin: 0em;
+}
+
+.connection_tr tr td
+{
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+}
+
+
+.Footer
+{
+	color: black;
+	display: flex;
+	flex-direction: column;
+	background-color: #f5f5f5;
+	padding: 1em;
+	border-top: solid 1px #white;
+	align-items: center;
+	margin-top: 12px;
+	
+	
+}
+.FooterTele img
+{
+	width: 50px;
+	height: 50px;
+}
+
+
+.FooterTele
+{
+	display:flex;
+	flex-direction: row;
+	font-size: 1.2em;
+
+}
+.FooterText
+{
+	display:flex;
+	text-align:center;
+}
